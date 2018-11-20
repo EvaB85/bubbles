@@ -14,18 +14,47 @@ body {
 
 header {
   background: rgb(171, 227, 255);
-  height: 20vh;
+  height: 8vh;
   width: 100vw;
 }
 
 main {
   background: rgb(142, 255, 224);
-  height: 70vh;
+  height: 87vh;
   width: 100vw;
 }
 
 footer {
   background: rgb(218, 222, 255);
-  height: 10vh;
+  height: 5vh;
   width: 100vw;
+}
+
+.bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: .1em solid white;
+  border-radius: 50em;
+  background: rgba(170, 212, 219, 0.8);
+
+  &__small {
+    height: 160px;
+    width: 160px;
+  }
+
+  &__medium {
+    height: 190px;
+    width: 190px;
+  }
+
+  &__big {
+    height: 210px;
+    width: 210px;
+  }
+}
+
+.bubble-text {
+  margin: 0;
+  padding: 0;
 }
