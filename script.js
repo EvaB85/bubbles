@@ -17,12 +17,12 @@ button.addEventListener('click', function() {
 
 let popBubble = function(e) {
   console.log(e);
-  // let classes = Array.from(e.target.classList);
-  // if (classes.includes('bubble')) {
-  //   e.target.remove();
-  // } else if (classes.includes('bubble-text')) {
-  //   e.target.parentNode.remove();
-  // };
+  let classes = Array.from(e.target.classList);
+  if (classes.includes('bubble')) {
+    e.target.remove();
+  } else if (classes.includes('bubble-text')) {
+    e.target.parentNode.remove();
+  };
 };
 
 window.addEventListener('click', function(e) {
