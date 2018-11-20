@@ -8,6 +8,7 @@ html, body {
 }
 
 body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -20,7 +21,7 @@ header {
 
 main {
   background: rgb(142, 255, 224);
-  height: 87vh;
+  flex-grow: 1;
   width: 100vw;
 }
 
@@ -37,7 +38,8 @@ footer {
   border: .1em solid white;
   border-radius: 50em;
   background: rgba(170, 212, 219, 0.8);
-
+  cursor: pointer;
+  
   &__small {
     height: 160px;
     width: 160px;
