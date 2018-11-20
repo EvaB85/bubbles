@@ -20,6 +20,9 @@ header {
 }
 
 main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   background: rgb(142, 255, 224);
   flex-grow: 1;
   width: 100vw;
@@ -39,7 +42,7 @@ footer {
   border-radius: 50em;
   background: rgba(170, 212, 219, 0.8);
   cursor: pointer;
-  
+
   &__small {
     height: 160px;
     width: 160px;

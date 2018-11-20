@@ -1,7 +1,8 @@
 let button = document.querySelector('button');
+let input = document.querySelector('input');
 
 let createBubble = function() {
-  let bubbleText = document.querySelector('input').value;
+  let bubbleText = input.value;
   let newP = document.createElement('p');
   newP.textContent = bubbleText;
   newP.className = 'bubble-text';
@@ -9,11 +10,24 @@ let createBubble = function() {
   newDiv.className = 'bubble bubble__small';
   newDiv.append(newP);
   document.querySelector('main').append(newDiv);
+  input.value = '';
+  input.focus();
 };
 
 button.addEventListener('click', function() {
   createBubble();
 });
+
+let createBubbleWithEnterKey = function(e) {
+  if (e.key === 'Enter') {
+    createBubble();
+  }
+}
+
+input.addEventListener('keyup', function(e) {
+  createBubbleWithEnterKey(e);
+})
+
 
 let popBubble = function(e) {
   console.log(e);
