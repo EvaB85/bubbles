@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: rgb(171, 227, 255);
+  height: 20vh;
+  width: 100vw;
+}
+
+main {
+  background: rgb(142, 255, 224);
+  height: 70vh;
+  width: 100vw;
+}
+
+footer {
+  background: rgb(218, 222, 255);
+  height: 10vh;
+  width: 100vw;
+}
