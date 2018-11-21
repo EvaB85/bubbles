@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway');
+
+// $teal: rgba(#13c9be, 0.68);
+$teal: rgba(#13c9be, 0.44);
+$lightteal: rgb(142, 255, 224);
+$grayblue: #8C95AA;
+$lightblue: rgb(218, 222, 255);
+$darknavyblue: rgb(44, 49, 73);
+
 * {
   box-sizing: border-box;
 }
@@ -14,22 +24,43 @@ body {
 }
 
 header {
-  background: rgb(171, 227, 255);
-  height: 8vh;
+  height: 35vh;
   width: 100vw;
+  background: $teal;
+  padding-left: 3em;
+}
+
+h1 {
+  color: $darknavyblue;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+  // font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', serif;
+}
+
+input {
+  font-size: 20px;
+  width: 200px;
+}
+
+button {
+  height: 20px;
 }
 
 main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: rgb(142, 255, 224);
+  background: #8C95AA;
   flex-grow: 1;
   width: 100vw;
+  background-image: url(img/dreamcatcher2.jpg);
 }
 
 footer {
-  background: rgb(218, 222, 255);
+  background: $darknavyblue;
   height: 5vh;
   width: 100vw;
 }
