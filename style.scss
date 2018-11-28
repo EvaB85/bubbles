@@ -28,6 +28,8 @@ header {
   width: 100vw;
   background: $teal;
   padding-left: 3em;
+  overflow: scroll;
+  padding-bottom: 2em;
 }
 
 h1 {
@@ -43,10 +45,8 @@ p {
 input {
   font-size: 20px;
   width: 200px;
-}
-
-button {
-  height: 20px;
+  color: $darknavyblue;
+  font-family: 'Raleway', serif;
 }
 
 main {
@@ -63,6 +63,14 @@ footer {
   background: $darknavyblue;
   height: 5vh;
   width: 100vw;
+}
+
+
+
+.question-button, .choices-button {
+  height: 30px;
+  font-size: 18px;
+  border-radius: 25px;
 }
 
 .bubble {
