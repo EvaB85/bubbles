@@ -1,8 +1,17 @@
-let button = document.querySelector('button');
-let input = document.querySelector('input');
+//second button does not work..change button to choices-button and querySelector to get element by class name
+
+let choicesButton = document.getElementById('choices-button');
+let questionButton = document.getElementsByClassName('question-button');
+
+let inputOne = document.getElementById('input-one');
+let inputTwo = document.getElementById('input-two');
+
+let createQuestion = function() {
+  let quesitonText = inputOne.value;
+}
 
 let createBubble = function() {
-  let bubbleText = input.value;
+  let bubbleText = inputTwo.value;
   let newP = document.createElement('p');
   newP.textContent = bubbleText;
   newP.className = 'bubble-text';
@@ -10,11 +19,11 @@ let createBubble = function() {
   newDiv.className = 'bubble bubble__small';
   newDiv.append(newP);
   document.querySelector('main').append(newDiv);
-  input.value = '';
-  input.focus();
+  inputTwo.value = '';
+  inputTwo.focus();
 };
 
-button.addEventListener('click', function() {
+choicesButton.addEventListener('click', function() {
   createBubble();
 });
 
@@ -24,7 +33,7 @@ let createBubbleWithEnterKey = function(e) {
   }
 }
 
-input.addEventListener('keyup', function(e) {
+inputTwo.addEventListener('keyup', function(e) {
   createBubbleWithEnterKey(e);
 })
 
